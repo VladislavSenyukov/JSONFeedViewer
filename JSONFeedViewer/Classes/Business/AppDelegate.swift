@@ -12,15 +12,22 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate, JFFacadeRetainable {
 
     var window: UIWindow?
+    var carsViewModel: JFCarsViewModel?
 
     lazy var appFacade: JFAppFacade = {
         return JFAppFacade()
     }()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        JFAppFacade.shared.obtainCarsDatasource(fromBundleResourceOfName: "cars.json") { (cars: [JFCar]) in
-            print(cars)
+        carsViewModel = JFAppFacade.shared.createCarsViewModel(decodedFromBundleResourceOfName: "cars.json")
+        carsViewModel?.onDidUpdateLoading = { loading in
+            print("loading: \(loading)")
         }
+        carsViewModel?.onDidLoadCars = { [unowned self] in
+            print("cars loaded, count: \(String(describing: self.carsViewModel?.numberOfCells))")
+            print("first car: \(String(describing: self.carsViewModel?.carCellViewModel(at: IndexPath(row: 0, section: 0))))")
+        }
+        carsViewModel?.load()
         return true
     }
 

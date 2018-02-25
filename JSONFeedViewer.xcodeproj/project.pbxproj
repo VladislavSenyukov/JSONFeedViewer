@@ -19,6 +19,9 @@
 		1CB03CA12043450100EA8E73 /* JFOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03CA02043450100EA8E73 /* JFOwner.swift */; };
 		1CB03CA620434B0A00EA8E73 /* Data+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03CA520434B0A00EA8E73 /* Data+Additions.swift */; };
 		1CB03CA82043521300EA8E73 /* JFFileDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03CA72043521300EA8E73 /* JFFileDecoder.swift */; };
+		1CB03CAC2043690900EA8E73 /* JFCarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03CAB2043690900EA8E73 /* JFCarsViewModel.swift */; };
+		1CB03CAE20436EE500EA8E73 /* JFCarCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03CAD20436EE500EA8E73 /* JFCarCellModel.swift */; };
+		1CB03CB020436F0C00EA8E73 /* JFOwnerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03CAF20436F0C00EA8E73 /* JFOwnerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		1CB03CA02043450100EA8E73 /* JFOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFOwner.swift; sourceTree = "<group>"; };
 		1CB03CA520434B0A00EA8E73 /* Data+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Additions.swift"; sourceTree = "<group>"; };
 		1CB03CA72043521300EA8E73 /* JFFileDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFFileDecoder.swift; sourceTree = "<group>"; };
+		1CB03CAB2043690900EA8E73 /* JFCarsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFCarsViewModel.swift; sourceTree = "<group>"; };
+		1CB03CAD20436EE500EA8E73 /* JFCarCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFCarCellModel.swift; sourceTree = "<group>"; };
+		1CB03CAF20436F0C00EA8E73 /* JFOwnerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFOwnerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 			children = (
 				1CB03C9620433B7B00EA8E73 /* AppDelegate.swift */,
 				1CB03CA72043521300EA8E73 /* JFFileDecoder.swift */,
+				1CB03CAB2043690900EA8E73 /* JFCarsViewModel.swift */,
 				1CB03C882043396A00EA8E73 /* Facade */,
 			);
 			path = Business;
@@ -105,6 +112,8 @@
 		1CB03C872043394500EA8E73 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1CB03CAD20436EE500EA8E73 /* JFCarCellModel.swift */,
+				1CB03CAF20436F0C00EA8E73 /* JFOwnerViewModel.swift */,
 				1CB03C9C20433F8700EA8E73 /* JFCar.swift */,
 				1CB03CA02043450100EA8E73 /* JFOwner.swift */,
 			);
@@ -218,6 +227,9 @@
 				1CB03CA620434B0A00EA8E73 /* Data+Additions.swift in Sources */,
 				1CB03C75204336EC00EA8E73 /* ViewController.swift in Sources */,
 				1CB03C8A2043399100EA8E73 /* JFAppFacade.swift in Sources */,
+				1CB03CAE20436EE500EA8E73 /* JFCarCellModel.swift in Sources */,
+				1CB03CB020436F0C00EA8E73 /* JFOwnerViewModel.swift in Sources */,
+				1CB03CAC2043690900EA8E73 /* JFCarsViewModel.swift in Sources */,
 				1CB03CA82043521300EA8E73 /* JFFileDecoder.swift in Sources */,
 				1CB03CA12043450100EA8E73 /* JFOwner.swift in Sources */,
 			);

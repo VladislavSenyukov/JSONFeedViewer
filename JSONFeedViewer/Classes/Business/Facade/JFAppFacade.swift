@@ -12,13 +12,18 @@ protocol JFFacadeRetainable {
     var appFacade: JFAppFacade {get}
 }
 
+protocol JFCarsDecodable {
+    func decodeFileInBundle(withName name: String, completion: @escaping (_ objects: [JFCar]) -> ())
+}
+class JFCarsDecoder: JFFileDecoder<JFCar>, JFCarsDecodable {}
+
 class JFAppFacade {
     static var shared: JFAppFacade {
         return (UIApplication.shared.delegate as! JFFacadeRetainable).appFacade
     }
     
-    func obtainCarsDatasource(fromBundleResourceOfName name: String,
-                              completion: @escaping (_ cars: [JFCar]) -> ()) {
-        JFFileDecoder<JFCar>().decodeFileInBundle(withName: name, completion: completion)
+    func createCarsViewModel(decodedFromBundleResourceOfName name: String) -> JFCarsViewModel {
+        // inject dependency and create a new model
+        return JFCarsViewModel(JFCarsDecoder(), filename: name)
     }
 }
