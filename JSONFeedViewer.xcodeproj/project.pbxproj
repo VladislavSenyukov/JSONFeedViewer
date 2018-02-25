@@ -7,21 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1CB03C73204336EC00EA8E73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03C72204336EC00EA8E73 /* AppDelegate.swift */; };
 		1CB03C75204336EC00EA8E73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03C74204336EC00EA8E73 /* ViewController.swift */; };
-		1CB03C78204336EC00EA8E73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB03C76204336EC00EA8E73 /* Main.storyboard */; };
-		1CB03C7A204336EC00EA8E73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CB03C79204336EC00EA8E73 /* Assets.xcassets */; };
-		1CB03C7D204336EC00EA8E73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB03C7B204336EC00EA8E73 /* LaunchScreen.storyboard */; };
+		1CB03C8A2043399100EA8E73 /* JFAppFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03C892043399100EA8E73 /* JFAppFacade.swift */; };
+		1CB03C8E20433AC700EA8E73 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CB03C8C20433AC700EA8E73 /* Info.plist */; };
+		1CB03C8F20433AC700EA8E73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CB03C8D20433AC700EA8E73 /* Assets.xcassets */; };
+		1CB03C9420433AD000EA8E73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB03C9020433AD000EA8E73 /* Main.storyboard */; };
+		1CB03C9520433AD000EA8E73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB03C9220433AD000EA8E73 /* LaunchScreen.storyboard */; };
+		1CB03C9720433B7B00EA8E73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03C9620433B7B00EA8E73 /* AppDelegate.swift */; };
+		1CB03C9920433D6C00EA8E73 /* cars.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CB03C9820433D6C00EA8E73 /* cars.json */; };
+		1CB03C9D20433F8700EA8E73 /* JFCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03C9C20433F8700EA8E73 /* JFCar.swift */; };
+		1CB03CA12043450100EA8E73 /* JFOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03CA02043450100EA8E73 /* JFOwner.swift */; };
+		1CB03CA620434B0A00EA8E73 /* Data+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03CA520434B0A00EA8E73 /* Data+Additions.swift */; };
+		1CB03CA82043521300EA8E73 /* JFFileDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03CA72043521300EA8E73 /* JFFileDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1CB03C6F204336EC00EA8E73 /* JSONFeedViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONFeedViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CB03C72204336EC00EA8E73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CB03C74204336EC00EA8E73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1CB03C77204336EC00EA8E73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1CB03C79204336EC00EA8E73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1CB03C7C204336EC00EA8E73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1CB03C7E204336EC00EA8E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CB03C892043399100EA8E73 /* JFAppFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFAppFacade.swift; sourceTree = "<group>"; };
+		1CB03C8C20433AC700EA8E73 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CB03C8D20433AC700EA8E73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CB03C9120433AD000EA8E73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CB03C9320433AD000EA8E73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CB03C9620433B7B00EA8E73 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CB03C9820433D6C00EA8E73 /* cars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cars.json; sourceTree = "<group>"; };
+		1CB03C9C20433F8700EA8E73 /* JFCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFCar.swift; sourceTree = "<group>"; };
+		1CB03CA02043450100EA8E73 /* JFOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFOwner.swift; sourceTree = "<group>"; };
+		1CB03CA520434B0A00EA8E73 /* Data+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Additions.swift"; sourceTree = "<group>"; };
+		1CB03CA72043521300EA8E73 /* JFFileDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFFileDecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +67,76 @@
 		1CB03C71204336EC00EA8E73 /* JSONFeedViewer */ = {
 			isa = PBXGroup;
 			children = (
-				1CB03C72204336EC00EA8E73 /* AppDelegate.swift */,
+				1CB03C8B20433A8D00EA8E73 /* Resources */,
+				1CB03C842043394500EA8E73 /* Classes */,
 				1CB03C74204336EC00EA8E73 /* ViewController.swift */,
-				1CB03C76204336EC00EA8E73 /* Main.storyboard */,
-				1CB03C79204336EC00EA8E73 /* Assets.xcassets */,
-				1CB03C7B204336EC00EA8E73 /* LaunchScreen.storyboard */,
-				1CB03C7E204336EC00EA8E73 /* Info.plist */,
 			);
 			path = JSONFeedViewer;
+			sourceTree = "<group>";
+		};
+		1CB03C842043394500EA8E73 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1CB03C852043394500EA8E73 /* UI */,
+				1CB03C862043394500EA8E73 /* Business */,
+				1CB03C872043394500EA8E73 /* Model */,
+				1CB03CA420434AE400EA8E73 /* Additions */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1CB03C852043394500EA8E73 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1CB03C862043394500EA8E73 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				1CB03C9620433B7B00EA8E73 /* AppDelegate.swift */,
+				1CB03CA72043521300EA8E73 /* JFFileDecoder.swift */,
+				1CB03C882043396A00EA8E73 /* Facade */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		1CB03C872043394500EA8E73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CB03C9C20433F8700EA8E73 /* JFCar.swift */,
+				1CB03CA02043450100EA8E73 /* JFOwner.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CB03C882043396A00EA8E73 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				1CB03C892043399100EA8E73 /* JFAppFacade.swift */,
+			);
+			path = Facade;
+			sourceTree = "<group>";
+		};
+		1CB03C8B20433A8D00EA8E73 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1CB03C8C20433AC700EA8E73 /* Info.plist */,
+				1CB03C8D20433AC700EA8E73 /* Assets.xcassets */,
+				1CB03C9820433D6C00EA8E73 /* cars.json */,
+				1CB03C9220433AD000EA8E73 /* LaunchScreen.storyboard */,
+				1CB03C9020433AD000EA8E73 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1CB03CA420434AE400EA8E73 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				1CB03CA520434B0A00EA8E73 /* Data+Additions.swift */,
+			);
+			path = Additions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +198,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CB03C7D204336EC00EA8E73 /* LaunchScreen.storyboard in Resources */,
-				1CB03C7A204336EC00EA8E73 /* Assets.xcassets in Resources */,
-				1CB03C78204336EC00EA8E73 /* Main.storyboard in Resources */,
+				1CB03C9420433AD000EA8E73 /* Main.storyboard in Resources */,
+				1CB03C9520433AD000EA8E73 /* LaunchScreen.storyboard in Resources */,
+				1CB03C9920433D6C00EA8E73 /* cars.json in Resources */,
+				1CB03C8F20433AC700EA8E73 /* Assets.xcassets in Resources */,
+				1CB03C8E20433AC700EA8E73 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,26 +213,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CB03C9D20433F8700EA8E73 /* JFCar.swift in Sources */,
+				1CB03C9720433B7B00EA8E73 /* AppDelegate.swift in Sources */,
+				1CB03CA620434B0A00EA8E73 /* Data+Additions.swift in Sources */,
 				1CB03C75204336EC00EA8E73 /* ViewController.swift in Sources */,
-				1CB03C73204336EC00EA8E73 /* AppDelegate.swift in Sources */,
+				1CB03C8A2043399100EA8E73 /* JFAppFacade.swift in Sources */,
+				1CB03CA82043521300EA8E73 /* JFFileDecoder.swift in Sources */,
+				1CB03CA12043450100EA8E73 /* JFOwner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1CB03C76204336EC00EA8E73 /* Main.storyboard */ = {
+		1CB03C9020433AD000EA8E73 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1CB03C77204336EC00EA8E73 /* Base */,
+				1CB03C9120433AD000EA8E73 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1CB03C7B204336EC00EA8E73 /* LaunchScreen.storyboard */ = {
+		1CB03C9220433AD000EA8E73 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1CB03C7C204336EC00EA8E73 /* Base */,
+				1CB03C9320433AD000EA8E73 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -276,7 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZVHW8QUG2S;
-				INFOPLIST_FILE = JSONFeedViewer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JSONFeedViewer/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruckef.JSONFeedViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +373,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZVHW8QUG2S;
-				INFOPLIST_FILE = JSONFeedViewer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JSONFeedViewer/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruckef.JSONFeedViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";

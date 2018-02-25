@@ -9,13 +9,18 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, JFFacadeRetainable {
 
     var window: UIWindow?
 
-
+    lazy var appFacade: JFAppFacade = {
+        return JFAppFacade()
+    }()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        JFAppFacade.shared.obtainCarsDatasource(fromBundleResourceOfName: "cars.json") { (cars: [JFCar]) in
+            print(cars)
+        }
         return true
     }
 
@@ -43,4 +48,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-
