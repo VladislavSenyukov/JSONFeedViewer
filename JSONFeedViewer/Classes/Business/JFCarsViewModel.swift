@@ -18,17 +18,31 @@ class JFCarsViewModel {
         self.filename = filename
     }
     func load() {
-        startDecoding(self.carsDecoder, bundleFileWithName: self.filename)
+        startDecoding(carsDecoder, bundleFileWithName: filename)
     }
     
     // MARK: Binding
     var onDidLoadCars: (() -> ())?
     var onDidUpdateLoading: ((_ loading: Bool) -> ())?
+    var onDidUpdateExpanded: ((_ indexPath: IndexPath, _ onDidFinishAnimation: @escaping () -> ()) -> ())?
     var numberOfCells: Int {
         return carCellModels.count
     }
     func carCellViewModel(at indexPath: IndexPath) -> JFCarCellModel {
         return carCellModels[indexPath.row]
+    }
+    func updateExpanded(forCellAt indexPath: IndexPath) {
+        if animating { // do not proceed if already animating
+            return
+        }
+        // update the expanded state
+        let carCellModel = carCellModels[indexPath.row]
+        carCellModel.expanded = !carCellModel.expanded
+        animating = true
+        // call a binding handler
+        onDidUpdateExpanded?(indexPath) { [unowned self] in
+            self.animating = false
+        }
     }
     
     // MARK: Private Data
@@ -43,6 +57,8 @@ class JFCarsViewModel {
             onDidUpdateLoading?(loading)
         }
     }
+    // animating state prevets from running the next animation before the first one is finished
+    private var animating: Bool = false
 
     // MARK: Private methods
     private func startDecoding(_ decoder: JFCarsDecodable, bundleFileWithName name: String) {

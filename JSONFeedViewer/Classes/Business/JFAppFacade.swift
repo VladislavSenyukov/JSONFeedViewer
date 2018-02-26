@@ -18,6 +18,7 @@ protocol JFCarsDecodable {
 class JFCarsDecoder: JFFileDecoder<JFCar>, JFCarsDecodable {}
 
 class JFAppFacade {
+    // the app delegate retains a facade whilst makes it accessible as a singleton
     static var shared: JFAppFacade {
         return (UIApplication.shared.delegate as! JFFacadeRetainable).appFacade
     }

@@ -17,7 +17,9 @@ class JFFileDecoder<T: Decodable> {
     
     func decodeFileInBundle(withName name: String, completion: @escaping JFDecodedObjectsCompletion) {
         runQueue.async {
+            // try to load contents of a file
             if let jsonData = Data(contentsOfFileInBundleOfName: name) {
+                // decode loaded contents
                 self.decodeWithJSONData(jsonData, completion: completion)
             } else {
                 self.runCompletionOnCallbackQueue(completion, withObjects: [])

@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1CB03C75204336EC00EA8E73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03C74204336EC00EA8E73 /* ViewController.swift */; };
-		1CB03C8A2043399100EA8E73 /* JFAppFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03C892043399100EA8E73 /* JFAppFacade.swift */; };
-		1CB03C8E20433AC700EA8E73 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CB03C8C20433AC700EA8E73 /* Info.plist */; };
 		1CB03C8F20433AC700EA8E73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CB03C8D20433AC700EA8E73 /* Assets.xcassets */; };
 		1CB03C9420433AD000EA8E73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB03C9020433AD000EA8E73 /* Main.storyboard */; };
 		1CB03C9520433AD000EA8E73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB03C9220433AD000EA8E73 /* LaunchScreen.storyboard */; };
@@ -22,12 +19,13 @@
 		1CB03CAC2043690900EA8E73 /* JFCarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03CAB2043690900EA8E73 /* JFCarsViewModel.swift */; };
 		1CB03CAE20436EE500EA8E73 /* JFCarCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03CAD20436EE500EA8E73 /* JFCarCellModel.swift */; };
 		1CB03CB020436F0C00EA8E73 /* JFOwnerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03CAF20436F0C00EA8E73 /* JFOwnerViewModel.swift */; };
+		1CB03CB220437AD200EA8E73 /* JFCarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03CB120437AD200EA8E73 /* JFCarsViewController.swift */; };
+		1CB03CB420437D0200EA8E73 /* JFCarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03CB320437D0200EA8E73 /* JFCarTableViewCell.swift */; };
+		1CB03CB620439B7A00EA8E73 /* JFAppFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB03CB520439B7A00EA8E73 /* JFAppFacade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1CB03C6F204336EC00EA8E73 /* JSONFeedViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONFeedViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CB03C74204336EC00EA8E73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1CB03C892043399100EA8E73 /* JFAppFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFAppFacade.swift; sourceTree = "<group>"; };
 		1CB03C8C20433AC700EA8E73 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CB03C8D20433AC700EA8E73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CB03C9120433AD000EA8E73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +39,9 @@
 		1CB03CAB2043690900EA8E73 /* JFCarsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFCarsViewModel.swift; sourceTree = "<group>"; };
 		1CB03CAD20436EE500EA8E73 /* JFCarCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFCarCellModel.swift; sourceTree = "<group>"; };
 		1CB03CAF20436F0C00EA8E73 /* JFOwnerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFOwnerViewModel.swift; sourceTree = "<group>"; };
+		1CB03CB120437AD200EA8E73 /* JFCarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFCarsViewController.swift; sourceTree = "<group>"; };
+		1CB03CB320437D0200EA8E73 /* JFCarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFCarTableViewCell.swift; sourceTree = "<group>"; };
+		1CB03CB520439B7A00EA8E73 /* JFAppFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFAppFacade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +76,6 @@
 			children = (
 				1CB03C8B20433A8D00EA8E73 /* Resources */,
 				1CB03C842043394500EA8E73 /* Classes */,
-				1CB03C74204336EC00EA8E73 /* ViewController.swift */,
 			);
 			path = JSONFeedViewer;
 			sourceTree = "<group>";
@@ -94,6 +94,8 @@
 		1CB03C852043394500EA8E73 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1CB03CB120437AD200EA8E73 /* JFCarsViewController.swift */,
+				1CB03CB320437D0200EA8E73 /* JFCarTableViewCell.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -102,9 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				1CB03C9620433B7B00EA8E73 /* AppDelegate.swift */,
+				1CB03CB520439B7A00EA8E73 /* JFAppFacade.swift */,
 				1CB03CA72043521300EA8E73 /* JFFileDecoder.swift */,
 				1CB03CAB2043690900EA8E73 /* JFCarsViewModel.swift */,
-				1CB03C882043396A00EA8E73 /* Facade */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -118,14 +120,6 @@
 				1CB03CA02043450100EA8E73 /* JFOwner.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		1CB03C882043396A00EA8E73 /* Facade */ = {
-			isa = PBXGroup;
-			children = (
-				1CB03C892043399100EA8E73 /* JFAppFacade.swift */,
-			);
-			path = Facade;
 			sourceTree = "<group>";
 		};
 		1CB03C8B20433A8D00EA8E73 /* Resources */ = {
@@ -211,7 +205,6 @@
 				1CB03C9520433AD000EA8E73 /* LaunchScreen.storyboard in Resources */,
 				1CB03C9920433D6C00EA8E73 /* cars.json in Resources */,
 				1CB03C8F20433AC700EA8E73 /* Assets.xcassets in Resources */,
-				1CB03C8E20433AC700EA8E73 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,13 +216,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CB03C9D20433F8700EA8E73 /* JFCar.swift in Sources */,
+				1CB03CB620439B7A00EA8E73 /* JFAppFacade.swift in Sources */,
 				1CB03C9720433B7B00EA8E73 /* AppDelegate.swift in Sources */,
 				1CB03CA620434B0A00EA8E73 /* Data+Additions.swift in Sources */,
-				1CB03C75204336EC00EA8E73 /* ViewController.swift in Sources */,
-				1CB03C8A2043399100EA8E73 /* JFAppFacade.swift in Sources */,
 				1CB03CAE20436EE500EA8E73 /* JFCarCellModel.swift in Sources */,
+				1CB03CB420437D0200EA8E73 /* JFCarTableViewCell.swift in Sources */,
 				1CB03CB020436F0C00EA8E73 /* JFOwnerViewModel.swift in Sources */,
 				1CB03CAC2043690900EA8E73 /* JFCarsViewModel.swift in Sources */,
+				1CB03CB220437AD200EA8E73 /* JFCarsViewController.swift in Sources */,
 				1CB03CA82043521300EA8E73 /* JFFileDecoder.swift in Sources */,
 				1CB03CA12043450100EA8E73 /* JFOwner.swift in Sources */,
 			);
